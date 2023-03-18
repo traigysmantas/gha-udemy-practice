@@ -2,7 +2,7 @@ name: Log issues event
 on: issues
 jobs:
   log:
-  runs-on: ubuntu-latest
-  steps:
-    - name: log issue
-      run: echo "${{ toJSON(github) }}"
+    runs-on: ubuntu-latest
+    steps:
+      - name: log issue
+        run: echo "${{ toJSON(github) }}"
